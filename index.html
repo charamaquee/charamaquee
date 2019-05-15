@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           
+<title>Character Builder</title>
+
+</head>
+<body >
+    <style>body{
+        background-image: url(bg.jpg);
+    color:#5b5a56;
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+p{
+    max-width:60vw;
+}
+
+    button{
+    color:#a3b2cc;
+    background-color: #5b5a56;
+    border:0px;
+    border-radius: 10px 10px 10px 10px;
+    font-size:1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1vh 1vw 1vh 1vw;
+    
+    }</style>
+  <center>
+     <div id="top">      
+<h1 id="title">Character Creation</p>
+<h2 id="subtitle">it's not much, but it's honest work</p>
+ 
+</div>
+
+<div id="personalityTraits">
+    <h3>Personality</h3>
+<p>Personality Traits are important when designing a character, make the negative and psoitive traits evenly weighted for the most part and be sure to include neutral traits as well for originality.</p>
+
+<div id= "personalityButtons">
+<button id="persButton1" onclick="giveNegative()">negative</button> 
+<p id="outputNegative"> </p>
+
+<button id="persButton2" onclick="givePositive()">positive</button>
+<p id="outputPositive"> </p>
+
+<button id="persButton3" onclick="giveNeutral()">neutral</button>
+<p id="outputNeutral"> </p>
+</div>
+</div>
+
+
+<div id="colors">
+    <h3>Colors</h3>
+<p>A cohesive color palette is very important in a good character design. Use this hex code generator to get some ideas!</p>
+
+<button onclick="giveColor()">Need a color?</button>
+<p id="outputColor"> </p>
+<div id="hex"><p>~</p></div>
+</div>
+
+
+<div id="aesthetic">
+<h3>Aesthetic</h3>
+<p>Having a particular aesthetic can help you to get a feel for the character as a whole. it can also be a fun challenge to try to design a character based on a particular aesthetic.</p>
+<button onclick="giveAesthetic()">A e s t h e t i c ?</button>
+<p id="outputAesthetic"> </p>
+</div>
+
+<div id="imagery">
+<h3>Imagery</h3>
+<p>Sometimes having a particular object to include somewhere in your drawing can be helpful, if you would like a random object generated, use this generator!</p>
+<button onclick="giveObj()">object</button>
+    <p id="outputObj"> </p>
+</div>
+
+<div id="name">
+    <h3>Name</h3>
+    <p>What's in a name? A lot. Maybe try to generate one?</p>
+    <button id="nameButton1" onclick="giveGirlName()">gal name?</button>
+    <p id="outputGirlName"> </p>
+
+    <button id="nameButton2"onclick="giveBoyName()">boy name?</button>
+    <p id="outputBoyName"> </p>
+</div>
+
+<div id="factoids">
+    <h3>Basic Factoids</h3>
+    <p>boi? gal? tall? chubby? let this generator choose for you!</p>
+
+    <button id="gen"onclick="giveGender()">gender</button>
+    <p id="outputGender"> </p>
+    
+    <button id="age"onclick="giveAge()">age</button>
+    <p id="outputAge"> </p>
+    
+    <button id="spe"onclick="giveSpecies()">species</button>
+    <p id="outputSpecies"> </p>
+
+    <button id="hei"onclick="giveHeight()">height</button>
+    <p id="outputHeight"> </p>
+
+    <button id="bui" onclick="giveBuild()">build</button>
+    <p id="outputBuild"> </p>
+</div>
+
+</center>
+
+ <script src="javascript.js"></script>
+</body>
+</html>
+
